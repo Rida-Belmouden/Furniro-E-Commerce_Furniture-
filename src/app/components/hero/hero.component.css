@@ -1,0 +1,64 @@
+.hero {
+  height: calc(100vh - 100px);
+  background-color: #EDEDED;
+  background-image: url('/img/scandinavian-interior.png');
+  background-size: cover;
+  background-repeat: space;
+  background-position: center;
+}
+
+.hero .hero-content {
+  position: relative;
+  left: 0;
+  height: 100%;
+}
+
+.hero .hero-content .card {
+  position: absolute;
+  top: calc((100vh - 100px - 61.88%) / 2);
+  right: 0;
+  width: 44.65%;
+  height: 61.80%;
+  background-color: #FFF3E3;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero .hero-content .card span{
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  line-height: auto;
+  color: var(--font-color);
+  margin-bottom: 8px;
+}
+
+.hero .hero-content .card h4{
+  font-weight: 700;
+  font-size: 3.25rem;
+  letter-spacing: 0px;
+  line-height: 65px;
+  color: var(--primary-color);
+}
+
+.hero .hero-content .card p{
+  font-weight: 500;
+  font-size: 1.125rem;
+  letter-spacing: 0;
+  line-height: 18px;
+  color: var(--font-color);
+  margin: 18px 0;
+}
+
+.hero .hero-content .card a.btn{
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0;
+  line-height: auto;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  padding: 15px 30px;
+  width: fit-content;
+}
