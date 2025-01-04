@@ -1,69 +1,70 @@
 .header {
     height: 100px;
-    margin: 0 auto;
+}
+
+.header .header-content {
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header .logo {
+.header .header-content .logo {
     width: 185px;
     height: 41px;
 }
 
-.header .logo a{
+.header .header-content .logo a{
     display: flex;
     align-items:center;
 }
 
-.header .logo a > img { 
+.header .header-content .logo a > img {
     width: 50px;
     height: 32px;
     margin-right: 5px;
 }
 
-.header .logo a > span { 
+.header .header-content .logo a > span {
     color: var(--black-color);
     font-family: var(--logo-font);
     font-weight: 700;
     font-size: 2.125rem;
 }
 
-.header .navbar ul {
+.header .header-content .navbar ul {
     display: flex;
     align-items: center;
 }
 
-.header .navbar ul li:not(:last-child) { 
-    margin-right: 75px;  
+.header .header-content .navbar ul li:not(:last-child) {
+    margin-right: 75px;
 }
 
-.header .navbar ul li a {
+.header .header-content .navbar ul li a {
     color: var(--black-color);
     font-weight: 500;
     font-size: 1rem;
 }
 
-.header .navbar ul li a:hover {
+.header .header-content .navbar ul li a:hover {
     color: var(--primary-color);
 }
 
-.header ul.icon-nav {
+.header .header-content ul.icon-nav {
     display: flex;
 }
 
-.header ul.icon-nav li:not(:last-child) { 
+.header .header-content ul.icon-nav li:not(:last-child) {
     margin-right: 45px;
 }
 
-.header ul.icon-nav li a{ 
+.header .header-content ul.icon-nav li a{
     color: var(--black-color);
     font-size: 1.565rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.header ul.icon-nav li a:hover{ 
+.header .header-content ul.icon-nav li a:hover{
     color: var(--primary-color);
 }

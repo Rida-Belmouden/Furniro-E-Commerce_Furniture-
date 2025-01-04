@@ -1,0 +1,82 @@
+.footer {
+
+}
+
+.footer .footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .footer-content > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.footer .footer-content > div .info {
+  width: 35%;
+}
+
+.footer .footer-content > div .info h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--blacl-color);
+  margin-bottom: 36px;
+}
+
+.footer .footer-content > div .info p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #9F9F9F;
+}
+
+.footer .footer-content > div .links dl dt,
+.footer .footer-content > div .newsletter h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #9F9F9F;
+  margin-bottom: 36px;
+}
+
+.footer .footer-content > div .links {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .footer-content > div .links dl dd {
+  margin: 22px 0;
+}
+
+.footer .footer-content > div .links dl dd a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.footer .footer-content > div .newsletter {
+  width: 35%;
+}
+
+.footer .footer-content > div .newsletter input,
+.footer .footer-content > div .newsletter button {
+  border: 0;
+  border-bottom: 1px solid #000;
+  padding: 6px 2px;
+  text-align: left;
+}
+
+.footer .footer-content > div .newsletter input{
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-right: 20px;
+  color: #9F9F9F;
+}
+.footer .footer-content > div .newsletter button {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--black-color);
+  background-color: transparent;
+  cursor: pointer;
+}
