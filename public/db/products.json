@@ -1,0 +1,23 @@
+[
+    {
+       "title":"Syltherine",
+       "img": "",
+       "category":"Stylish cafe chair",
+       "realPrice": "3.500.000",
+       "price":"Rp 2.500.00"
+    },
+    {
+       "title":"Leviosa",
+       "img": "",
+       "category":"Stylish cafe chair",
+       "realPrice": "",
+       "price":"Rp 2.500.000"
+    },
+    {
+       "title":"Lolito",
+       "img": "",
+       "category":"Luxury big sofa",
+       "realPrice": "Rp 14.000.000",
+       "price":"Rp 7.000.000"
+    }
+]
