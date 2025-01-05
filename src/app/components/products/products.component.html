@@ -1,14 +1,53 @@
 <section class="our-products">
-    <div class="container products-content">
-        <h3>Our Products</h3>
-        <div class="list-products">
-            <div class="product" *ngForOf="let product of products">
-                <img src="{{product.img}}" alt="#">
-                <h1>{{product.title}}</h1>
-                <span>{{product.category}}</span>
-                <span>{{product.realPrice}}</span>
-                <span>{{product.price}}</span>
-            </div>
+  <div class="container products-content">
+    <h3>Our Products</h3>
+    <div class="list-products" *ngIf="products && products.length > 0; else loading">
+      <div class="product" *ngFor="let product of products; let i = index" (mouseover)="showOverlay[i] = true"
+        (mouseleave)="showOverlay[i] = false">
+        <img [src]="product.imgUrl" alt="{{product.title}}">
+        <div>
+          <h1 class="name">{{product.name}}</h1>
+          <span class="description">{{product.description}}</span>
+          <span class="discount" [ngStyle]="product.discount == 0 ?{'display':'none'} : {'display':'inline-block'}">
+              <span>{{product.current}}</span>
+              {{product.price - (product.price * product.discount/100)}}
+          </span>
+          <span class="price" [class.price-before-discount]="product.discount > '0'">
+            <span>{{product.current}}</span>
+            {{product.price}}
+          </span>
+          <span class="tag" [ngStyle]="'New'== product.tag ?{'background-color':'#2EC1AC'} : {'background-color': '#E97171'}">{{product.tag}}</span>
+          <div class="overlay" [hidden]="!showOverlay[i]" [ngStyle]="{'display': showOverlay[i] ? 'flex' : 'none'}">
+            <button>Add to cart</button>
+            <ul>
+              <li>
+                <a href="">
+                  <i class="iconify" data-icon="material-symbols:share"></i>
+                  <span>Share</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="iconify" data-icon="clarity:two-way-arrows-line"></i>
+                  <span>Compare</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="iconify" data-icon="mdi:heart-outline"></i>
+                  <span>Like</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
+    <div class="show-more">
+      <button class="">Show More</button>
+    </div>
+    <ng-template #loading>
+      <p>Loading products...</p>
+    </ng-template>
+  </div>
 </section>

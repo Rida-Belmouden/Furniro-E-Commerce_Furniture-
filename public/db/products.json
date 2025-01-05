@@ -1,23 +1,74 @@
 [
-    {
-       "title":"Syltherine",
-       "img": "",
-       "category":"Stylish cafe chair",
-       "realPrice": "3.500.000",
-       "price":"Rp 2.500.00"
-    },
-    {
-       "title":"Leviosa",
-       "img": "",
-       "category":"Stylish cafe chair",
-       "realPrice": "",
-       "price":"Rp 2.500.000"
-    },
-    {
-       "title":"Lolito",
-       "img": "",
-       "category":"Luxury big sofa",
-       "realPrice": "Rp 14.000.000",
-       "price":"Rp 7.000.000"
-    }
+  {
+    "name": "Syltherine",
+    "imgUrl": "/img/product-1.png",
+    "description": "Stylish cafe chair",
+    "price": "3500",
+    "discount": "30",
+    "tag": "-30%",
+    "current": "Rp"
+  },
+  {
+    "name": "Leviosa",
+    "imgUrl": "/img/product-2.png",
+    "description": "Stylish cafe chair",
+    "price": "2500",
+    "discount": "0",
+    "tag": "",
+    "current": "Rp"
+  },
+  {
+    "name": "Lolito",
+    "imgUrl": "/img/product-3.png",
+    "description": "Luxury big sofa",
+    "price": "14000",
+    "discount": "50",
+    "tag": "-50%",
+    "current": "Rp"
+  },
+  {
+    "name": "Respira",
+    "imgUrl": "/img/product-4.png",
+    "description": "Outdoor bar table and stool",
+    "price": "500",
+    "discount": "0",
+    "tag": "New",
+    "current": "Rp"
+  },
+  {
+    "name": "Grifo",
+    "imgUrl": "/img/product-5.png",
+    "description": "Night lamp",
+    "price": "1500",
+    "discount": "0",
+    "tag": "",
+    "current": "Rp"
+  },
+  {
+    "name": "Muggo",
+    "imgUrl": "/img/product-6.png",
+    "description": "Small mug",
+    "price": "150",
+    "discount": "0",
+    "tag": "New",
+    "current": "Rp"
+  },
+  {
+    "name": "Pingky",
+    "imgUrl": "/img/product-7.png",
+    "description": "Cute bed set",
+    "price": "7000",
+    "discount": "50",
+    "tag": "-50%",
+    "current": "Rp"
+  },
+  {
+    "name": "Potty",
+    "imgUrl": "/img/product-8.png",
+    "description": "Minimalist flower pot",
+    "price": "500",
+    "discount": "0",
+    "tag": "New",
+    "current": "Rp"
+  }
 ]
