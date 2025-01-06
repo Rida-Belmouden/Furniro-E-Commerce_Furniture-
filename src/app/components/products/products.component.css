@@ -28,6 +28,7 @@
 .products-content .list-products .product img {
   width: 100%;
   height: auto;
+  max-height: 301px;
   transition: all 0.3s ease-in-out;
 }
 
